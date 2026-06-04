@@ -27,26 +27,6 @@ h1 {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
-
-
-.container input {
-    text-align: center;
-
-    /*explicação
-.container
-
-Seleciona o elemento que tem class="container" no HTML
-
-input
-
-Seleciona todas as tags <input> que estão dentro do .container
-
-.container input
-
-Junto significa: "pega todos os inputs que estão dentro da div com class container"*/
-
-}
-
 .container div {
     display: flex;
     justify-content: space-between;
@@ -69,7 +49,7 @@ input {
     border-radius: 6px;
     background: #0f172a;
     color: #f1f5f9;
-    text-align: right;
+    text-align: center; /* Mudei de right pra center */
     font-size: 1rem;
 }
 
@@ -87,6 +67,7 @@ input:focus {
     background: #7f1d1d;
     color: #fca5a5;
 }
+
 #btn-calcular {
     width: 100%;
     padding: 14px;
@@ -110,4 +91,26 @@ input:focus {
 
 #btn-calcular:active {
     transform: scale(0.98);
+}
+
+/* MOBILE: deixa os inputs flexíveis */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+    
+    .container div {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+        text-align: center;
+    }
+    
+    input {
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
 }
