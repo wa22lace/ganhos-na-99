@@ -27,6 +27,23 @@ h1 {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
+.container input {
+    text-align: center;
+
+    /*explicação
+.container
+
+Seleciona o elemento que tem class="container" no HTML
+
+input
+
+Seleciona todas as tags <input> que estão dentro do .container
+
+.container input
+
+Junto significa: "pega todos os inputs que estão dentro da div com class container"*/
+}
+
 .container div {
     display: flex;
     justify-content: space-between;
