@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: #f1f5f9;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #38bdf8;
+    font-size: 2rem;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.container input {
+    text-align: center;
+
+    /*explicação
+.container
+
+Seleciona o elemento que tem class="container" no HTML
+
+input
+
+Seleciona todas as tags <input> que estão dentro do .container
+
+.container input
+
+Junto significa: "pega todos os inputs que estão dentro da div com class container"*/
+
+}
+
+.container div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 12px;
+    background: #334155;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.container div:hover {
+    background: #475569;
+}
+
+input {
+    width: 150px;
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    background: #0f172a;
+    color: #f1f5f9;
+    text-align: right;
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: 2px solid #38bdf8;
+}
+
+#saldo input {
+    background: #065f46;
+    font-weight: bold;
+    color: #6ee7b7;
+}
+
+#saldo.negative input {
+    background: #7f1d1d;
+    color: #fca5a5;
+}
+#btn-calcular {
+    width: 100%;
+    padding: 14px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    color: #0f172a;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+#btn-calcular:hover {
+    filter: brightness(1.1);
+    box-shadow: 0 4px 15px rgba(56, 189, 248, 0.4);
+}
+
+#btn-calcular:active {
+    transform: scale(0.98);
+}
